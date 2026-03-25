@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace projekat_2026_Ognjen_Brkic
 {
@@ -25,7 +26,19 @@ namespace projekat_2026_Ognjen_Brkic
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+            if (txt_email.Text == "" || txt_password.Text == "")
+            {
+                MessageBox.Show("Morate uneti podatke!");
+            }
+            else
+            {
+                SqlConnection veza = konekcija.Connect();
+                DataTable podaci = new DataTable();
+                SqlDataAdapter adapter = new SqlDataAdapter("select * from klijenti where email="+txt_email.Text, veza);
+                adapter.Fill(podaci);
+            }
 
+            
         }
     }
 }
