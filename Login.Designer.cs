@@ -33,6 +33,8 @@
             this.lbl_password = new System.Windows.Forms.Label();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.txt_password = new System.Windows.Forms.TextBox();
+            this.btn_sign_up = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_login
@@ -79,6 +81,33 @@
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(188, 20);
             this.txt_password.TabIndex = 4;
+            this.txt_password.UseSystemPasswordChar = true;
+            // 
+            // btn_sign_up
+            // 
+            this.btn_sign_up.BackColor = System.Drawing.Color.Transparent;
+            this.btn_sign_up.FlatAppearance.BorderSize = 0;
+            this.btn_sign_up.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_sign_up.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sign_up.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_sign_up.Location = new System.Drawing.Point(27, 314);
+            this.btn_sign_up.Name = "btn_sign_up";
+            this.btn_sign_up.Size = new System.Drawing.Size(74, 28);
+            this.btn_sign_up.TabIndex = 5;
+            this.btn_sign_up.Text = "Sign up";
+            this.btn_sign_up.UseVisualStyleBackColor = false;
+            this.btn_sign_up.Click += new System.EventHandler(this.btn_sign_up_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(13, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(311, 23);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Dobrodosli, molim vas da se ulogujete";
             // 
             // Login
             // 
@@ -86,6 +115,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(336, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_sign_up);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.lbl_password);
@@ -106,6 +137,8 @@
         private System.Windows.Forms.Label lbl_password;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.TextBox txt_password;
+        private System.Windows.Forms.Button btn_sign_up;
+        private System.Windows.Forms.Label label1;
     }
 }
 

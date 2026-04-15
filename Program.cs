@@ -7,7 +7,10 @@ using System.Windows.Forms;
 namespace projekat_2026_Ognjen_Brkic
 {
     internal static class Program
+
     {
+        static public int user_id = -1;
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +19,7 @@ namespace projekat_2026_Ognjen_Brkic
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new rezervacija());
         }
     }
 }

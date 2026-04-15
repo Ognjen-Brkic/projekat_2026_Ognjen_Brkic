@@ -14,7 +14,9 @@ namespace projekat_2026_Ognjen_Brkic
         static public SqlConnection Connect()
         {
             String CS;
-            CS=ConfigurationManager.ConnectionStrings
+            CS = ConfigurationManager.ConnectionStrings["kuca"].ConnectionString;
+            SqlConnection veza= new SqlConnection(CS);
+            return veza;
 
         }
     }
