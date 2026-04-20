@@ -18,11 +18,7 @@ namespace projekat_2026_Ognjen_Brkic
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // Ognjen Brkic
-            // drugi red
-        }
+    
 
         private void btn_login_Click(object sender, EventArgs e)
         {
@@ -65,7 +61,10 @@ namespace projekat_2026_Ognjen_Brkic
                         if (String.Compare(tabela2.Rows[0]["password"].ToString(), txt_password.Text) == 0)
                         {
                             MessageBox.Show("Uspesno ste se ulogovali");
-                            Program.user_id = Convert.ToInt32(tabela.Rows[0]["id"]);
+                            Program.user_id = Convert.ToInt32(tabela2.Rows[0]["id"]);
+                            admin frm_admin=new admin();
+                            frm_admin.Show();
+                            this.Hide();
                             
                         }
                         else

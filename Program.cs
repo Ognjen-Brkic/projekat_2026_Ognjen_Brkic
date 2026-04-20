@@ -19,7 +19,7 @@ namespace projekat_2026_Ognjen_Brkic
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new rezervacija());
+            Application.Run(new Login());
         }
     }
 }

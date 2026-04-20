@@ -41,6 +41,7 @@
             this.lbl_password_opet = new System.Windows.Forms.Label();
             this.lbl_broj_telefona = new System.Windows.Forms.Label();
             this.btn_signup = new System.Windows.Forms.Button();
+            this.btn_nazad = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txt_ime
@@ -151,11 +152,27 @@
             this.btn_signup.UseVisualStyleBackColor = true;
             this.btn_signup.Click += new System.EventHandler(this.btn_signup_Click);
             // 
+            // btn_nazad
+            // 
+            this.btn_nazad.BackColor = System.Drawing.Color.Transparent;
+            this.btn_nazad.FlatAppearance.BorderSize = 0;
+            this.btn_nazad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_nazad.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nazad.Location = new System.Drawing.Point(740, 9);
+            this.btn_nazad.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_nazad.Name = "btn_nazad";
+            this.btn_nazad.Size = new System.Drawing.Size(51, 36);
+            this.btn_nazad.TabIndex = 13;
+            this.btn_nazad.Text = "←";
+            this.btn_nazad.UseVisualStyleBackColor = false;
+            this.btn_nazad.Click += new System.EventHandler(this.btn_nazad_Click);
+            // 
             // signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_nazad);
             this.Controls.Add(this.btn_signup);
             this.Controls.Add(this.lbl_broj_telefona);
             this.Controls.Add(this.lbl_password_opet);
@@ -191,5 +208,6 @@
         private System.Windows.Forms.Label lbl_password_opet;
         private System.Windows.Forms.Label lbl_broj_telefona;
         private System.Windows.Forms.Button btn_signup;
+        private System.Windows.Forms.Button btn_nazad;
     }
 }
