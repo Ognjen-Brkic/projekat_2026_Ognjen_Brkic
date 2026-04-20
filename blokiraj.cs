@@ -146,6 +146,13 @@ namespace projekat_2026_Ognjen_Brkic
             MessageBox.Show("Termin uspesno odblokiran!");
             grid_populate();
         }
+
+        private void btn_nazad_Click(object sender, EventArgs e)
+        {
+            admin frm_admin=new admin();
+            frm_admin.Show();
+            this.Hide();
+        }
     }
 }
 

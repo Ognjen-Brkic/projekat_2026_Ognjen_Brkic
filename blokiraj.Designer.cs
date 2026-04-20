@@ -38,6 +38,7 @@
             this.blok_datum = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.btn_nazad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grid_blokirani)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,9 +82,9 @@
             this.button1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(12, 319);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 36);
+            this.button1.Size = new System.Drawing.Size(122, 36);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Blokiraj";
+            this.button1.Text = "Blokiraj termin";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -128,19 +129,35 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(399, 320);
+            this.button2.Location = new System.Drawing.Point(351, 320);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 36);
+            this.button2.Size = new System.Drawing.Size(144, 36);
             this.button2.TabIndex = 9;
-            this.button2.Text = "Odblokiraj";
+            this.button2.Text = "Odblokiraj termin";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btn_nazad
+            // 
+            this.btn_nazad.BackColor = System.Drawing.Color.Transparent;
+            this.btn_nazad.FlatAppearance.BorderSize = 0;
+            this.btn_nazad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_nazad.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nazad.Location = new System.Drawing.Point(740, 9);
+            this.btn_nazad.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_nazad.Name = "btn_nazad";
+            this.btn_nazad.Size = new System.Drawing.Size(51, 36);
+            this.btn_nazad.TabIndex = 14;
+            this.btn_nazad.Text = "←";
+            this.btn_nazad.UseVisualStyleBackColor = false;
+            this.btn_nazad.Click += new System.EventHandler(this.btn_nazad_Click);
             // 
             // blokiraj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_nazad);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.blok_datum);
@@ -172,5 +189,6 @@
         private System.Windows.Forms.DateTimePicker blok_datum;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_nazad;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,6 +20,11 @@ namespace projekat_2026_Ognjen_Brkic
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            SqlConnection veza = konekcija.Connect();
+            SqlCommand komanda = new SqlCommand("exec generisanje_termina", veza);
+            veza.Open();
+            komanda.ExecuteNonQuery();
+            veza.Close();
             Application.Run(new Login());
         }
     }
