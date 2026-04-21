@@ -34,6 +34,7 @@
             this.grid_termini = new System.Windows.Forms.DataGridView();
             this.btn_otkazi = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grid_recenzije)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grid_termini)).BeginInit();
             this.SuspendLayout();
@@ -41,7 +42,7 @@
             // grid_recenzije
             // 
             this.grid_recenzije.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid_recenzije.Location = new System.Drawing.Point(12, 241);
+            this.grid_recenzije.Location = new System.Drawing.Point(12, 264);
             this.grid_recenzije.Name = "grid_recenzije";
             this.grid_recenzije.Size = new System.Drawing.Size(476, 131);
             this.grid_recenzije.TabIndex = 0;
@@ -50,7 +51,7 @@
             // btn_rec
             // 
             this.btn_rec.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_rec.Location = new System.Drawing.Point(12, 390);
+            this.btn_rec.Location = new System.Drawing.Point(12, 401);
             this.btn_rec.Name = "btn_rec";
             this.btn_rec.Size = new System.Drawing.Size(124, 37);
             this.btn_rec.TabIndex = 1;
@@ -85,7 +86,7 @@
             this.btn_otkazi.Name = "btn_otkazi";
             this.btn_otkazi.Size = new System.Drawing.Size(102, 32);
             this.btn_otkazi.TabIndex = 4;
-            this.btn_otkazi.Text = "Otkazi";
+            this.btn_otkazi.Text = "Otkazi termin";
             this.btn_otkazi.UseVisualStyleBackColor = true;
             this.btn_otkazi.Click += new System.EventHandler(this.btn_otkazi_Click);
             // 
@@ -99,11 +100,22 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Vasi termini";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(8, 242);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 19);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Recenzije";
+            // 
             // glavna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_otkazi);
             this.Controls.Add(this.grid_termini);
@@ -129,5 +141,6 @@
         private System.Windows.Forms.DataGridView grid_termini;
         private System.Windows.Forms.Button btn_otkazi;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

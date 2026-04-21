@@ -110,7 +110,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(252, 41);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Ostavite ocenu";
+            this.label1.Text = "Ostavite ocenu:";
             // 
             // label2
             // 
@@ -119,7 +119,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(252, 41);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Ostavite komentar";
+            this.label2.Text = "Ostavite komentar:";
             // 
             // btn_postavi_rec
             // 
@@ -138,7 +138,7 @@
             this.btn_nazad.FlatAppearance.BorderSize = 0;
             this.btn_nazad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_nazad.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_nazad.Location = new System.Drawing.Point(740, 9);
+            this.btn_nazad.Location = new System.Drawing.Point(347, 9);
             this.btn_nazad.Margin = new System.Windows.Forms.Padding(0);
             this.btn_nazad.Name = "btn_nazad";
             this.btn_nazad.Size = new System.Drawing.Size(51, 36);
@@ -151,7 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(407, 450);
             this.Controls.Add(this.btn_nazad);
             this.Controls.Add(this.btn_postavi_rec);
             this.Controls.Add(this.label2);

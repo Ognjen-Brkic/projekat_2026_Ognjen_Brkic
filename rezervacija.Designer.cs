@@ -39,17 +39,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btn_rezervisi = new System.Windows.Forms.Button();
             this.btn_nazad = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.grid_cenovnik)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_frizer
             // 
             this.lbl_frizer.AutoSize = true;
+            this.lbl_frizer.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_frizer.Location = new System.Drawing.Point(35, 30);
             this.lbl_frizer.Name = "lbl_frizer";
-            this.lbl_frizer.Size = new System.Drawing.Size(84, 13);
+            this.lbl_frizer.Size = new System.Drawing.Size(97, 15);
             this.lbl_frizer.TabIndex = 0;
-            this.lbl_frizer.Text = "Odaberite frizera";
+            this.lbl_frizer.Text = "Izaberite frizera:";
             // 
             // cmb_frizer
             // 
@@ -62,7 +64,7 @@
             // 
             // datum_picker
             // 
-            this.datum_picker.Location = new System.Drawing.Point(38, 134);
+            this.datum_picker.Location = new System.Drawing.Point(38, 118);
             this.datum_picker.Name = "datum_picker";
             this.datum_picker.Size = new System.Drawing.Size(200, 20);
             this.datum_picker.TabIndex = 2;
@@ -71,7 +73,7 @@
             // cmb_usluga
             // 
             this.cmb_usluga.FormattingEnabled = true;
-            this.cmb_usluga.Location = new System.Drawing.Point(271, 134);
+            this.cmb_usluga.Location = new System.Drawing.Point(267, 118);
             this.cmb_usluga.Name = "cmb_usluga";
             this.cmb_usluga.Size = new System.Drawing.Size(121, 21);
             this.cmb_usluga.TabIndex = 3;
@@ -80,7 +82,7 @@
             // cmb_termin
             // 
             this.cmb_termin.FormattingEnabled = true;
-            this.cmb_termin.Location = new System.Drawing.Point(426, 134);
+            this.cmb_termin.Location = new System.Drawing.Point(426, 118);
             this.cmb_termin.Name = "cmb_termin";
             this.cmb_termin.Size = new System.Drawing.Size(121, 21);
             this.cmb_termin.TabIndex = 4;
@@ -96,38 +98,41 @@
             // lbl_biranje
             // 
             this.lbl_biranje.AutoSize = true;
+            this.lbl_biranje.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_biranje.Location = new System.Drawing.Point(35, 100);
             this.lbl_biranje.Name = "lbl_biranje";
-            this.lbl_biranje.Size = new System.Drawing.Size(79, 13);
+            this.lbl_biranje.Size = new System.Drawing.Size(98, 15);
             this.lbl_biranje.TabIndex = 6;
-            this.lbl_biranje.Text = "Izaberite datum";
+            this.lbl_biranje.Text = "Izaberite datum:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(268, 100);
+            this.label1.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(264, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 13);
+            this.label1.Size = new System.Drawing.Size(128, 15);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Izaberite vrstu usluge";
+            this.label1.Text = "Izaberite vrstu usluge:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(428, 100);
+            this.label2.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(423, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 13);
+            this.label2.Size = new System.Drawing.Size(100, 15);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Izaberite termin";
+            this.label2.Text = "Izaberite termin:";
             // 
             // btn_rezervisi
             // 
             this.btn_rezervisi.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_rezervisi.Location = new System.Drawing.Point(38, 375);
             this.btn_rezervisi.Name = "btn_rezervisi";
-            this.btn_rezervisi.Size = new System.Drawing.Size(135, 34);
+            this.btn_rezervisi.Size = new System.Drawing.Size(173, 34);
             this.btn_rezervisi.TabIndex = 9;
-            this.btn_rezervisi.Text = "Rezervisi";
+            this.btn_rezervisi.Text = "Rezervisi termin";
             this.btn_rezervisi.UseVisualStyleBackColor = true;
             this.btn_rezervisi.Click += new System.EventHandler(this.btn_rezervisi_Click);
             // 
@@ -146,11 +151,22 @@
             this.btn_nazad.UseVisualStyleBackColor = false;
             this.btn_nazad.Click += new System.EventHandler(this.btn_nazad_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(35, 168);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 19);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Cenovnik";
+            // 
             // rezervacija
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btn_nazad);
             this.Controls.Add(this.btn_rezervisi);
             this.Controls.Add(this.label2);
@@ -185,5 +201,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_rezervisi;
         private System.Windows.Forms.Button btn_nazad;
+        private System.Windows.Forms.Label label3;
     }
 }

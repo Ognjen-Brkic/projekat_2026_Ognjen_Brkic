@@ -54,9 +54,9 @@
             this.lbl_email.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_email.Location = new System.Drawing.Point(45, 168);
             this.lbl_email.Name = "lbl_email";
-            this.lbl_email.Size = new System.Drawing.Size(31, 13);
+            this.lbl_email.Size = new System.Drawing.Size(34, 13);
             this.lbl_email.TabIndex = 1;
-            this.lbl_email.Text = "email";
+            this.lbl_email.Text = "email:";
             // 
             // lbl_password
             // 
@@ -64,9 +64,9 @@
             this.lbl_password.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lbl_password.Location = new System.Drawing.Point(24, 214);
             this.lbl_password.Name = "lbl_password";
-            this.lbl_password.Size = new System.Drawing.Size(52, 13);
+            this.lbl_password.Size = new System.Drawing.Size(55, 13);
             this.lbl_password.TabIndex = 2;
-            this.lbl_password.Text = "password";
+            this.lbl_password.Text = "password:";
             // 
             // txt_email
             // 
@@ -124,7 +124,6 @@
             this.Controls.Add(this.btn_login);
             this.Name = "Login";
             this.Text = "Form1";
-            
             this.ResumeLayout(false);
             this.PerformLayout();
 
