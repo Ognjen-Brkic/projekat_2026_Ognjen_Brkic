@@ -21,7 +21,7 @@ namespace projekat_2026_Ognjen_Brkic
         {
             SqlConnection veza = konekcija.Connect();
             StringBuilder upit = new StringBuilder();
-            upit.Append("select min(termini.id) as id, min(termini.termin) as termin, termini.datum, ");
+            upit.Append("select min(termini.termin) as termin, termini.datum, ");
             upit.Append("termini.usluga, klijenti.ime, klijenti.prezime, klijenti.broj_telefona ");
             upit.Append("from termini ");
             upit.Append("join klijenti on termini.klijent_id = klijenti.id ");
@@ -46,6 +46,11 @@ namespace projekat_2026_Ognjen_Brkic
             blokiraj frm_blok=new blokiraj();
             frm_blok.Show();
             this.Hide();
+        }
+
+        private void admin_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

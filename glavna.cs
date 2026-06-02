@@ -45,11 +45,11 @@ namespace projekat_2026_Ognjen_Brkic
             SqlConnection veza = konekcija.Connect();
             StringBuilder upit = new StringBuilder();
             upit.Append("select min(termini.id) as id, termini.datum, min(termini.termin) as termin, ");
-            upit.Append("termini.usluga, termini.admin_id, administratori.ime ");
+            upit.Append("termini.usluga, termini.admin_id, frizeri.ime ");
             upit.Append("from termini ");
-            upit.Append("join administratori on termini.admin_id = administratori.id ");
+            upit.Append("join frizeri on termini.admin_id = frizeri.id ");
             upit.Append("where termini.klijent_id = @klijent_id ");
-            upit.Append("group by termini.datum, termini.usluga, termini.admin_id, administratori.ime ");
+            upit.Append("group by termini.datum, termini.usluga, termini.admin_id, frizeri.ime ");
             upit.Append("order by termini.datum, min(termini.termin)");
 
             SqlDataAdapter adapter = new SqlDataAdapter(upit.ToString(), veza);
@@ -73,7 +73,7 @@ namespace projekat_2026_Ognjen_Brkic
         {
             if (grid_recenzije.Columns[e.ColumnIndex].Name == "broj_zvezdica")
             {
-                if (e.Value != null)
+                if(e.Value != null && e.Value != DBNull.Value)
                 {
                     int broj = Convert.ToInt32(e.Value);
                     e.Value = new string('★', broj);

@@ -31,6 +31,7 @@ namespace projekat_2026_Ognjen_Brkic
             adapter.Fill(tabela);
             grid_blokirani.DataSource = tabela;
             grid_blokirani.ReadOnly = true;
+            grid_blokirani.Columns["id"].Visible = false;
         }
         private void cmb_termini_populate()
         {
@@ -152,6 +153,11 @@ namespace projekat_2026_Ognjen_Brkic
             admin frm_admin=new admin();
             frm_admin.Show();
             this.Hide();
+        }
+
+        private void blokiraj_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

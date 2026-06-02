@@ -164,6 +164,7 @@
             this.Controls.Add(this.lbl_zvezda1);
             this.Name = "recenzija";
             this.Text = "recenzija";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.recenzija_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

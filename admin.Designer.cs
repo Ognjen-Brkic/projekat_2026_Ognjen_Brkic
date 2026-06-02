@@ -61,6 +61,7 @@
             this.Controls.Add(this.grid_terminiadmin);
             this.Name = "admin";
             this.Text = "admin";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.admin_FormClosed);
             this.Load += new System.EventHandler(this.admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid_terminiadmin)).EndInit();
             this.ResumeLayout(false);

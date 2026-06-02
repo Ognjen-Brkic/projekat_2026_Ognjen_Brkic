@@ -170,6 +170,7 @@
             this.Controls.Add(this.grid_blokirani);
             this.Name = "blokiraj";
             this.Text = "blokiraj";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.blokiraj_FormClosed);
             this.Load += new System.EventHandler(this.blokiraj_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid_blokirani)).EndInit();
             this.ResumeLayout(false);

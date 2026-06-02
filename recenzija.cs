@@ -77,5 +77,10 @@ namespace projekat_2026_Ognjen_Brkic
             frm_glavna.Show();
             this.Hide();    
         }
+
+        private void recenzija_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

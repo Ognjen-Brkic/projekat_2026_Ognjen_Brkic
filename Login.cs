@@ -52,7 +52,7 @@ namespace projekat_2026_Ognjen_Brkic
                 }
                 else
                 {
-                    SqlDataAdapter adapter2 = new SqlDataAdapter("select * from administratori where username='" + txt_email.Text+"'", veza);
+                    SqlDataAdapter adapter2 = new SqlDataAdapter("select * from frizeri where username='" + txt_email.Text+"'", veza);
                     DataTable tabela2 = new DataTable();
                     adapter2.Fill(tabela2);
                     brojac = tabela2.Rows.Count;

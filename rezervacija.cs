@@ -16,7 +16,7 @@ namespace projekat_2026_Ognjen_Brkic
         private void cmb_frizer_populate()
         {
             SqlConnection veza= konekcija.Connect();
-            SqlDataAdapter adapter= new SqlDataAdapter("select id, ime from administratori",veza);
+            SqlDataAdapter adapter= new SqlDataAdapter("select id, ime from frizeri",veza);
             DataTable tabela= new DataTable();
             adapter.Fill(tabela);
             cmb_frizer.DataSource=tabela;
